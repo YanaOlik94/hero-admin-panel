@@ -33,5 +33,5 @@ export const {
   filtersFetching,
   filtersFetched,
   filtersFetchingError,
-  activeFilterChanged,
+  filtersChanged,
 } = actions;

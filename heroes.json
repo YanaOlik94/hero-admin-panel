@@ -11,6 +11,12 @@
       "name": "Чудо женщина",
       "description": "fly",
       "element": "wind"
+    },
+    {
+      "id": "dab7ea3a-af2e-4a68-b5cd-8fce134f4a39",
+      "name": "spider man ",
+      "description": "jump",
+      "element": "earth"
     }
   ],
   "filters": [

@@ -3,14 +3,11 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import classNames from 'classnames';
 
-import { fetchFilters } from '../../actions';
-import { filtersChanged } from './heroesFiltersSlice';
+import { filtersChanged, fetchFilters } from './heroesFiltersSlice';
 import Spinner from '../spinner/Spinner';
 
 const HeroesFilters = () => {
-  const { filters, filtersLoadingStatus, activeFilter } = useSelector(
-    (state) => state.filters
-  );
+  const { filters, filtersLoadingStatus, activeFilter } = useSelector((state) => state.filters );
   const dispatch = useDispatch();
   const { request } = useHttp();
 
@@ -50,8 +47,6 @@ const HeroesFilters = () => {
   };
 
   const elements = renderFilters(filters);
-
-  console.log('filters', filters);
 
   return (
     <div className='card shadow-lg mt-4'>
